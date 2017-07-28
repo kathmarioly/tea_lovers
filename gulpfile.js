@@ -6,7 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap-css/dist/js/bootstrap-js', 'assets/js/*.js'])
+	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'assets/js/*.js'])
 	.pipe(concat('script.js'))
 	//carpeta dist
 	.pipe(gulp.dest('dist/js/'));
@@ -14,7 +14,7 @@ gulp.task('script', function(){
 
 //segunda tarea.
 gulp.task('style', function(){
-	gulp.src(['node_modules/bootstrap-css/dist/css/bootstrap.css', 'assets/sass/main.scss'])
+	gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sass/main.scss'])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(minifyCSS())
 	.pipe(concat('style.min.css'))
@@ -23,7 +23,7 @@ gulp.task('style', function(){
 
 //TERCERA TAREA: webserver.
 gulp.task('webserver', function(){
-	gulp.src('../gulpie/')
+	gulp.src('../tea_lovers/')
 	.pipe(webserver({
 		fallback: 'index.html',
 		livereload: true,
@@ -32,4 +32,10 @@ gulp.task('webserver', function(){
 	}));
 });
 
-gulp.task('default', ['script', 'style', 'webserver'])
+
+gulp.task('watch', function() {
+	gulp.watch('assets/sass/*.scss', ['style']);
+});
+
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch'])
