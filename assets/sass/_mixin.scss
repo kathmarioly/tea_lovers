@@ -122,3 +122,22 @@
 	}
 
 }
+.bienvenida{
+
+	background-image: url("../img/fondo-bienvenida.jpg");
+
+	background-size: cover;
+	background-position: center; /* Para centrar la imagen*/
+	padding: 50px 0;
+
+
+
+	.logo{
+		text-align: left;
+		padding: 0 30px;
+	}
+
+	.mensaje {
+		text-align: center;
+	}
+}

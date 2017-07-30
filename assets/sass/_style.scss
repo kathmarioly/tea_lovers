@@ -5,43 +5,10 @@ body {
 	font-family: "Lato", sans-serif;
 	overflow:hidden;
 	transition: background-color .5s;
+	overflow: scroll;
 }
 
 .nav{
 	@include  menu();
 }
 
-//Seccion bienvenida
-
-.bienvenida{
-	background-image: url("../img/fondo-bienvenida.jpg")
-}
-.logo{
-	text-align: left;
-	padding: 0 30px;
-}
-
-.mensaje {
-	text-align: center;
-}
-
-
-//seccion video
-.caja{
-	background-color: black;
-	margin-top: 0;
-	iframe{
-		max-width: 100%;
-		width:100%;
-	}
-}
-.tipos-te{
-	background-color: white;
-	.container{
-		display:inline-block;
-	}
-
-}
-.prueba{
-	color:red;
-}
