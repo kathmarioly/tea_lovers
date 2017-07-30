@@ -7,7 +7,7 @@
 		z-index: 1;
 		top: 0;
 		left: 0;
-		background-color: #000040;
+		background-color: black;
 		box-shadow: 0 4px 4px -3px #232323;
 		-moz-box-shadow: 0 4px 4px -3px #232323;
 		-webkit-box-shadow: 0 4px 4px -3px #232323;
@@ -31,6 +31,7 @@
 
 	.menulist {
 		width:200px;
+		height:100px;
 	}
 
 
@@ -125,13 +126,10 @@
 .bienvenida{
 
 	background-image: url("../img/fondo-bienvenida.jpg");
-
+	max-width: 100%;
 	background-size: cover;
 	background-position: center; /* Para centrar la imagen*/
-	padding: 50px 0;
-
-
-
+	padding: 5em 0;
 	.logo{
 		text-align: left;
 		padding: 0 30px;
@@ -141,3 +139,37 @@
 		text-align: center;
 	}
 }
+
+//Seccion Video
+.video{
+	background-color:black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: absolute;
+	margin-top: -50px;
+	padding: 3em 0;
+
+	frame{
+		margin: 10px 0px 10px 0px;
+		max-width: 100px;
+		width: 100%;
+		position:fixed;
+		
+	}
+
+
+}
+.nuestra-pasion{
+	background-image: url("../img/fondo-about.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 5em 0;
+	background-position: center left;
+	.texto-tres{
+		color:white;
+	}
+
+}
+

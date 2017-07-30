@@ -10,5 +10,7 @@ body {
 
 .nav{
 	@include  menu();
+	padding: 0 15px;
+	margin: 0 -15px;
 }
 
