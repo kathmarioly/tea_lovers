@@ -129,14 +129,16 @@
 	max-width: 100%;
 	background-size: cover;
 	background-position: center; /* Para centrar la imagen*/
-	padding: 5em 0;
+	padding: 6em 0;
+	padding-right: 0px;
+	padding-left: 46px;
+
 	.logo{
 		text-align: left;
 		padding: 0 30px;
 	}
-
-	.mensaje {
-		text-align: center;
+	.mensaje{
+		margin: 10px 0px 10px 0px;
 	}
 }
 
