@@ -150,7 +150,7 @@
 	margin-top: -50px;
 	padding: 3em 0;
 
-	frame{
+	iframe{
 		margin: 10px 0px 10px 0px;
 		max-width: 100px;
 		width: 110%;
@@ -192,7 +192,24 @@
 	}
 }
 
-.collage{
-	img {margin: 0; padding: 0}
-	
+.header{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+img.img-responsive{
+	margin: 0;
+	padding-bottom: 26px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.img-text{
+	position: absolute;
+	left: 15px;
+	top: 0;
+	background-color: #EA4748; /*Sandia*/
+	color: #fff;
+	padding: 10px 25px;
+	font-weight: 700;
 }
