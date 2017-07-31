@@ -150,16 +150,14 @@
 	margin-top: -50px;
 	padding: 3em 0;
 
-	iframe{
+	video{
 		margin: 10px 0px 10px 0px;
-		max-width: 100px;
+		max-width: 100%;
 		width: 110%;
-		position:fixed;
-		
+		position:fixed;	
 	}
-
-
 }
+//SECCION TRES.
 .nuestra-pasion{
 	background-image: url("../img/fondo-about.jpg");
 	height: 100vh;
@@ -190,26 +188,56 @@
 	.container h2{
 		color: #ff4d4d;
 	}
+	.row{
+		display: flex;
+		justify-content: center;
+	}
 }
 
-.header{
+//SECCION CINCO.
+.collage{
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 30px;
+
+	img.img-responsive{
+		margin: 0;
+		padding-bottom: 26px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.img-text{
+		position: absolute;
+		left: 15px;
+		top: 0;
+		background-color: #EA4748; /*Sandia*/
+		color: #fff;
+		padding: 10px 25px;
+		font-weight: 700;
+	}
 }
-img.img-responsive{
-	margin: 0;
-	padding-bottom: 26px;
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-.img-text{
-	position: absolute;
-	left: 15px;
-	top: 0;
-	background-color: #EA4748; /*Sandia*/
-	color: #fff;
-	padding: 10px 25px;
-	font-weight: 700;
+
+//SECCION SEIS.
+.preguntas{
+	background-image: url("../img/disfruta.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 5em 0;
+	background-position: center left;
+	.texto-seis{
+		color: white;
+		width: 40%;
+		margin: 0 auto;
+		padding: 30px 30px 100px 30px;
+
+		h1 {
+			font-weight: bolder;
+			font-size: 5rem;
+			line-height: 5rem;
+			text-transform: uppercase;
+
+		}	
+	}
 }
