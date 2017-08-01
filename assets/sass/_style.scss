@@ -23,4 +23,15 @@ body {
 	padding: 0 15px;
 	margin: 0 -15px;
 }
+.nuestra-pasion{
+	@include seccion-tres();
 
+	.logo{
+		text-align: left;
+		padding: 0 30px;
+	}
+}
+//PREGUNTAS
+.preguntas{
+	@include seccion-seis();
+}

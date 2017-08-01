@@ -129,7 +129,7 @@
 	max-width: 100%;
 	background-size: cover;
 	background-position: center; /* Para centrar la imagen*/
-	padding: 6em 0;
+	padding: 5em 0;
 	padding-right: 0px;
 	padding-left: 46px;
 
@@ -160,26 +160,39 @@
 	}
 }
 //SECCION TRES.
-.nuestra-pasion{
+@mixin seccion-tres(){
+
 	background-image: url("../img/fondo-about.jpg");
 	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 5em 0;
 	background-position: center left;
+
 	.texto-tres{
 		color: white;
-		width: 40%;
 		margin: 0 auto;
-		padding: 30px 30px 100px 30px;
+		padding: 30px 10px 100px 0px;
+
 	}
 	h1 {
 		font-weight: bolder;
-		font-size: 5rem;
-		line-height: 5rem;
+		font-size: 7rem;
+		line-height: 7rem;
 		text-transform: uppercase;
+		width: 40%;
 	}	
+	.row{
+		display: flex;
+		justify-content: center;
+	}
+	p{
+		font-size: 2rem;
+		width: 100%;
+	}
 }
+
+//SECCION CUATRO:
 
 .tipo-de-te{
 	background-position: center;
@@ -221,7 +234,7 @@
 }
 
 //SECCION SEIS.
-.preguntas{
+@mixin seccion-seis(){
 	background-image: url("../img/disfruta.jpg");
 	height: 100vh;
 	background-size: cover;
@@ -304,3 +317,6 @@
 		}
 	}
 }
+
+
+
