@@ -243,17 +243,20 @@
 	background-position: center left;
 	.texto-seis{
 		color: white;
-		width: 40%;
 		margin: 0 auto;
-		padding: 30px 30px 100px 30px;
+		padding: 30px 10px 100px 0px;
 
-		h1 {
-			font-weight: bolder;
-			font-size: 5rem;
-			line-height: 5rem;
-			text-transform: uppercase;
-
-		}	
+	}
+	h1 {
+		font-weight: bolder;
+		font-size: 7rem;
+		line-height: 7rem;
+		text-transform: uppercase;
+		width: 100%;
+	}	
+	.row{
+		display: flex;
+		justify-content: center;
 	}
 }
 
