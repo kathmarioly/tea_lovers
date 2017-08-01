@@ -12676,3 +12676,18 @@ function navToggle() {
 	}
 
 };
+
+$('#nuestra').on('click', function(e) {
+	e.preventDefault();
+	$("html, body").animate({scrollTop: $('#nuestra-pasion').offset().top }, 1000);
+});
+
+$('#ask').on('click', function(e) {
+	e.preventDefault();
+	$("html, body").animate({scrollTop: $('#preguntas').offset().top }, 1000);
+});
+
+$('#camp').on('click', function(e) {
+	e.preventDefault();
+	$("html, body").animate({scrollTop: $('#campos').offset().top }, 1000);
+});
