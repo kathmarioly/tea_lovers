@@ -35,3 +35,8 @@ body {
 .preguntas{
 	@include seccion-seis();
 }
+
+//CAMPOS:
+.campos{
+	@include seccion-ocho();
+}
